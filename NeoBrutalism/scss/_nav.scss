@@ -1,0 +1,63 @@
+.nav-pills {
+  .nav-link {
+    margin-left: 0;
+    margin-right: 6px;
+    padding: 4px 10px;
+    font-weight: bold;
+    background: var(--muted);
+    color: var(--primary);
+    border: 2px solid var(--border);
+    border-radius: var(--radius);
+
+    &:hover {
+      background-color: var(--secondary);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-xs);
+    }
+
+    img {
+      margin-right: 0.5em;
+      vertical-align: -3px;
+    }
+  }
+
+  .nav-link.active,
+  .show>.nav-link {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+  }
+}
+
+.nav-tabs {
+  font-weight: bold;
+  border-bottom: 2px solid var(--border);
+
+  .nav-link {
+    background-color: var(--muted);
+    color: var(--foreground);
+    border: 2px solid var(--border);
+    border-bottom: none;
+    margin-right: 0.4em;
+    padding: 7px 10px;
+    border-radius: var(--radius);
+
+    &:hover,
+    &:focus {
+      background-color: var(--secondary);
+      box-shadow: var(--shadow-xs);
+    }
+  }
+
+  .nav-link.active,
+  .nav-item.show .nav-link {
+    background-color: var(--background);
+    border-bottom-color: var(--background);
+
+    &:hover,
+    &:focus {
+      background-color: $nav-tabs-link-active-bg;
+    }
+  }
+}

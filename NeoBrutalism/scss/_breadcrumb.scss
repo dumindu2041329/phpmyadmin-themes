@@ -1,0 +1,19 @@
+@import "../../bootstrap/scss/breadcrumb";
+
+.breadcrumb-navbar {
+  .breadcrumb-item {
+    +.breadcrumb-comment {
+      padding-left: 0.5rem;
+    }
+
+    a {
+      color: var(--background);
+    }
+  }
+
+  .breadcrumb-comment {
+    color: var(--muted);
+    font-weight: bold;
+    font-style: italic;
+  }
+}

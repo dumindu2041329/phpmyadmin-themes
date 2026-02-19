@@ -1,0 +1,58 @@
+.table {
+  caption-side: top;
+  border: 2px solid var(--border);
+
+  th,
+  td {
+    vertical-align: middle;
+    border: 1px solid var(--border);
+
+    >span:empty::before {
+      content: "\200b";
+    }
+  }
+
+  th {
+    color: var(--foreground);
+    font-weight: bold;
+  }
+
+  td {
+    touch-action: manipulation;
+  }
+
+  thead th {
+    border-right: 1px solid var(--border);
+    background: var(--muted);
+    border-bottom: 2px solid var(--border);
+  }
+
+  caption {
+    background-color: var(--muted);
+    color: var(--foreground);
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid var(--border);
+    border-bottom: none;
+  }
+}
+
+.table-hover {
+  tbody tr {
+    &:hover {
+      background: var(--secondary);
+    }
+  }
+}
+
+.table-striped {
+  >tbody>tr:nth-of-type(#{$table-striped-order})>th {
+    color: var(--foreground);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .table th.position-sticky {
+    top: 60px;
+  }
+}

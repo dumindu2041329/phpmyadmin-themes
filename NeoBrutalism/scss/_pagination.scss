@@ -1,0 +1,25 @@
+.page-link {
+  background: var(--background);
+  border: 2px solid var(--border);
+  color: var(--foreground);
+
+  &:hover {
+    text-decoration: $link-hover-decoration;
+    background: var(--muted);
+    box-shadow: var(--shadow-xs);
+  }
+}
+
+.page-item {
+  &.active .page-link {
+    background: var(--primary);
+    color: var(--primary-foreground);
+    border-color: var(--border);
+    box-shadow: var(--shadow-sm);
+  }
+
+  &.disabled .page-link {
+    background: var(--muted);
+    color: var(--muted-foreground);
+  }
+}

@@ -1,0 +1,176 @@
+// NeoBrutalism Theme Variables
+// Maps SCSS variables to CSS custom properties from theme.md
+
+// -------------------------------------------------------------------------
+// 1. Color System & Bootstrap Overrides (Must be first)
+// -------------------------------------------------------------------------
+
+$enable-gradients: false;
+$enable-shadows: false;
+$enable-transitions: false;
+
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$blue: #0d6efd !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #d63384 !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #198754 !default;
+$teal: #20c997 !default;
+$cyan: #0dcaf0 !default;
+
+$primary: $blue !default;
+$secondary: $gray-600 !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $gray-900 !default;
+
+// -------------------------------------------------------------------------
+// 2. phpMyAdmin Specific Variables
+// -------------------------------------------------------------------------
+
+// navi frame
+$navi-width: 240px;
+$navi-color: $black;
+$navi-background: $white;
+$navi-right-gradient: $white;
+$navi-pointer-color: $white;
+$navi-pointer-background: $primary;
+$navi-border: $black;
+
+// main frame
+$main-color: $black;
+$browse-pointer-color: $black;
+$browse-pointer-background: $gray-200;
+$browse-marker-color: $black;
+$browse-marker-background: $gray-200;
+
+// tables (pma variables)
+$border: 2px solid $black; // used in pma styles
+$th-background: $gray-200;
+$th-color: $black;
+$bg-one: $white;
+$bg-two: $gray-100;
+
+// -------------------------------------------------------------------------
+// 3. Bootstrap Component Variables
+// -------------------------------------------------------------------------
+
+$body-color: $black;
+
+// Links
+$link-color: $primary;
+$link-decoration: none;
+$link-hover-color: $primary;
+$link-hover-decoration: underline;
+
+// Components
+$border-radius: 0;
+$btn-border-radius: 0;
+$btn-line-height: 1.15;
+
+// Typography
+$font-family-base: var(--font-sans);
+$font-family-monospace: var(--font-mono);
+$font-size-base: 0.82rem;
+$h1-font-size: 140%;
+$h2-font-size: 2em;
+$h3-font-size: 1rem;
+
+// Tables (Bootstrap)
+$table-cell-padding-y: 0.1em;
+$table-cell-padding-x: 0.3em;
+$table-cell-padding-y-sm: $table-cell-padding-y;
+$table-cell-padding-x-sm: $table-cell-padding-x;
+$table-bg: transparent;
+$table-head-bg: $gray-200;
+$table-head-color: $gray-700;
+$table-striped-order: even;
+$table-striped-bg: $gray-100;
+$table-hover-color: $gray-700;
+$table-border-color: $gray-300;
+$table-border-width: 2px;
+$table-caption-color: $gray-600;
+
+// Dropdowns
+$dropdown-padding-y: 0;
+$dropdown-item-padding-y: 0;
+$dropdown-item-padding-x: 0;
+
+// Forms
+$form-check-input-margin-y: 0.1rem;
+$form-check-input-checked-bg-color: $primary;
+
+// Navs
+$nav-tabs-border-color: $gray-300;
+$nav-tabs-link-active-border-color: $gray-300 $gray-300 $white;
+$nav-tabs-link-hover-border-color: $gray-200 $gray-200 $gray-300;
+$nav-tabs-link-active-color: $gray-700;
+
+// Navbar
+$enable-caret: false;
+$navbar-padding-y: 0;
+$navbar-padding-x: 0;
+$navbar-light-color: $primary;
+$navbar-light-hover-color: $primary;
+$navbar-light-active-color: $primary;
+$navbar-light-disabled-color: $gray-500;
+
+// Pagination
+$pagination-active-color: $primary;
+$pagination-border-color: $gray-300;
+$pagination-hover-border-color: $gray-300;
+$pagination-active-border-color: $gray-300;
+$pagination-disabled-border-color: $gray-500;
+
+// Card
+$card-border-color: $gray-300;
+$card-bg: $white;
+$card-cap-bg: $gray-100;
+
+// Accordion
+$accordion-button-padding-y: 0.375rem;
+$accordion-button-padding-x: 0.75rem;
+$accordion-button-active-color: $primary;
+$accordion-button-active-bg: $gray-100;
+
+// Breadcrumbs
+$breadcrumb-navbar-padding-y: 0.1rem;
+$breadcrumb-navbar-padding-x: 2.2em;
+$breadcrumb-navbar-margin-bottom: 0;
+$breadcrumb-navbar-bg: var(--foreground);
+$breadcrumb-divider-color: var(--background);
+$breadcrumb-divider: quote("»");
+
+// Modals
+$modal-inner-padding: 0.75rem;
+$modal-footer-margin-between: 0.1rem;
+$modal-header-padding-y: 0.4rem;
+
+// Alert
+$alert-margin-bottom: 0.5em;
+$alert-border-radius: 0;
+
+// List group
+$list-group-bg: inherit;
+$list-group-item-padding-x: 0.75rem;
+$list-group-item-padding-y: 0.375rem;
+
+// Forms
+$label-margin-bottom: 0;

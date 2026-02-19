@@ -1,0 +1,30 @@
+.btn-primary,
+.btn-outline-primary {
+  font-weight: $font-weight-bold;
+}
+
+.btn-primary,
+.btn-secondary {
+  border: 2px solid var(--border);
+  color: var(--primary-foreground);
+  background: var(--primary);
+  box-shadow: var(--shadow-sm);
+
+  &:hover {
+    background: var(--accent);
+    color: var(--accent-foreground);
+    box-shadow: var(--shadow-xs);
+  }
+}
+
+.btn-outline-primary,
+.btn-outline-secondary {
+  color: var(--foreground);
+  border: 2px solid var(--border);
+  background: var(--background);
+
+  &:hover {
+    background: var(--muted);
+    box-shadow: var(--shadow-xs);
+  }
+}

@@ -1,0 +1,35 @@
+.navbar.bg-light {
+  background: var(--background);
+  border-bottom: 2px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+.navbar-nav {
+  font-weight: bold;
+}
+
+.navbar-nav .icon {
+  margin-right: 0.5em;
+  vertical-align: -3px;
+}
+
+.navbar-nav .nav-item {
+  background: var(--background);
+  border-right: 2px solid var(--border);
+  border-left: none;
+  border-bottom: none;
+
+  &:first-child {
+    border-left: 0;
+  }
+
+  &:hover {
+    background: var(--secondary);
+  }
+
+  &.active {
+    background: var(--primary);
+    color: var(--primary-foreground);
+    border-bottom: 0;
+  }
+}

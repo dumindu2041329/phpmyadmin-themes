@@ -1,0 +1,114 @@
+$textarea-cols: 40;
+$textarea-rows: 15;
+
+.CodeMirror {
+  height: 20rem;
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  font-family: var(--font-mono);
+}
+
+// Code mirror default style (do not affect the console style)
+.CodeMirror.cm-s-default {
+
+  // @see: issue #17705
+  div.CodeMirror-scroll {
+    margin-right: 0;
+    padding-bottom: 0;
+  }
+}
+
+#inline_editor_outer .CodeMirror {
+  height: ceil($textarea-rows * 0.4em);
+}
+
+.insertRowTable .CodeMirror {
+  min-height: ceil($textarea-rows * 0.6em);
+  min-width: ceil($textarea-cols * 0.6em);
+  border: 2px solid var(--border);
+}
+
+#pma_console .CodeMirror-gutters {
+  background-color: initial;
+  border: none;
+}
+
+span {
+
+  &.cm-keyword,
+  &.cm-statement-verb {
+    color: var(--primary);
+    font-weight: bold;
+  }
+
+  &.cm-variable {
+    color: var(--foreground);
+  }
+
+  &.cm-comment {
+    color: var(--muted-foreground);
+  }
+
+  &.cm-mysql-string {
+    color: var(--chart-4);
+  }
+
+  &.cm-operator {
+    color: var(--chart-5);
+    font-weight: bold;
+  }
+
+  &.cm-mysql-word {
+    color: var(--foreground);
+  }
+
+  &.cm-builtin {
+    color: var(--primary);
+  }
+
+  &.cm-variable-2 {
+    color: var(--secondary);
+  }
+
+  &.cm-variable-3 {
+    color: var(--accent);
+  }
+
+  &.cm-separator {
+    color: var(--chart-5);
+  }
+
+  &.cm-number {
+    color: var(--accent);
+    font-weight: bold;
+  }
+}
+
+.autocomplete-column-name {
+  display: inline-block;
+}
+
+.autocomplete-column-hint {
+  display: inline-block;
+  float: right;
+  color: var(--muted-foreground);
+  margin-left: 1em;
+}
+
+.CodeMirror-hints {
+  z-index: 1999;
+  border: 2px solid var(--border);
+  box-shadow: var(--shadow-md);
+}
+
+.CodeMirror-lint-tooltip {
+  z-index: 2000;
+  font-family: var(--font-sans);
+  border: 2px solid var(--border);
+  box-shadow: var(--shadow-sm);
+
+  code {
+    font-family: var(--font-mono);
+    font-weight: bold;
+  }
+}
