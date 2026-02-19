@@ -12,4 +12,4 @@ Inspired by the iconic [Supabase](https://supabase.com/) design system — a sle
 
 **Preview:**
 
-![Supabase Theme Preview](supabase/screen.png)
+![Supabase Theme Preview](screen.png)
