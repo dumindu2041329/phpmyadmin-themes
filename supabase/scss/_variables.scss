@@ -1,0 +1,186 @@
+// configures general layout for detailed layout configuration please refer to the css files
+
+// navi frame
+
+// navi frame width
+$navi-width: 240px;
+
+// foreground (text) color for the navi frame
+$navi-color: var(--sidebar-foreground);
+
+// background for the navi frame
+$navi-background: var(--sidebar);
+$navi-right-gradient: var(--sidebar-border);
+
+// foreground (text) color of the pointer in navi frame
+$navi-pointer-color: var(--sidebar-accent-foreground);
+
+// background of the pointer in navi frame
+$navi-pointer-background: var(--sidebar-accent);
+
+// main frame
+
+// foreground (text) color for the main frame
+$main-color: var(--foreground);
+
+// foreground (text) color of the pointer in browse mode
+$browse-pointer-color: var(--accent-foreground);
+
+// background of the pointer in browse mode
+$browse-pointer-background: var(--accent);
+
+// foreground (text) color of the marker (visually marks row by clicking on it)
+// in browse mode
+$browse-marker-color: var(--primary-foreground);
+
+// background of the marker (visually marks row by clicking on it) in browse mode
+$browse-marker-background: var(--primary);
+
+// tables
+
+// border
+$border: 0;
+// table header and footer color
+$th-background: var(--muted);
+// table header and footer background
+$th-color: var(--muted-foreground);
+// table data row background
+$bg-one: var(--background);
+// table data row background, alternate
+$bg-two: var(--muted);
+
+// Bootstrap
+// ---------
+
+// Body
+
+$body-color: $main-color;
+
+// Links
+
+$link-color: var(--primary);
+$link-decoration: none;
+$link-hover-color: var(--primary);
+$link-hover-decoration: underline;
+
+// Components
+
+$border-radius: 0.25rem;
+
+// Typography
+
+$font-family-base: var(--font-sans);
+$font-family-monospace: var(--font-mono);
+
+$font-size-base: 0.82rem;
+
+$h1-font-size: 140%;
+$h2-font-size: 2em;
+$h3-font-size: 1rem;
+
+// Tables
+
+$table-cell-padding-y: 0.1em;
+$table-cell-padding-x: 0.3em;
+$table-cell-padding-y-sm: $table-cell-padding-y;
+$table-cell-padding-x-sm: $table-cell-padding-x;
+$table-bg: var(--background);
+$table-head-bg: var(--muted);
+$table-head-color: var(--muted-foreground);
+$table-striped-order: even;
+$table-striped-bg: var(--muted);
+$table-hover-color: $browse-pointer-color;
+$table-border-color: var(--border);
+$table-border-width: 0;
+$table-caption-color: $table-head-color;
+
+// Buttons
+
+$enable-gradients: false;
+$enable-shadows: true;
+$enable-transitions: false;
+
+$primary: var(--primary);
+$secondary: var(--secondary);
+
+$btn-border-radius: 0.85rem;
+$btn-line-height: 1.15;
+
+// Dropdowns
+
+$dropdown-padding-y: 0;
+$dropdown-item-padding-y: 0;
+$dropdown-item-padding-x: 0;
+
+// Forms
+
+$form-check-input-margin-y: 0.1rem;
+$form-check-input-checked-bg-color: var(--primary);
+
+// Navs
+
+$nav-tabs-border-color: var(--border);
+$nav-tabs-link-active-border-color: var(--border) var(--border) var(--background);
+$nav-tabs-link-hover-border-color: $bg-two $bg-two var(--border);
+$nav-tabs-link-active-color: var(--foreground);
+
+// Navbar
+
+$enable-caret: false;
+$navbar-padding-y: 0;
+$navbar-padding-x: 0;
+$navbar-light-color: var(--foreground);
+$navbar-light-hover-color: var(--foreground);
+$navbar-light-active-color: var(--foreground);
+$navbar-light-disabled-color: var(--muted-foreground);
+
+// Pagination
+
+$pagination-active-color: var(--primary);
+$pagination-border-color: var(--border);
+$pagination-hover-border-color: var(--border);
+$pagination-active-border-color: var(--border);
+$pagination-disabled-border-color: var(--border);
+
+// Card
+
+$card-border-color: var(--border);
+$card-bg: var(--card);
+$card-cap-bg: var(--muted);
+
+// Accordion
+
+$accordion-button-padding-y: 0.375rem;
+$accordion-button-padding-x: 0.75rem;
+$accordion-button-active-color: var(--primary);
+$accordion-button-active-bg: var(--accent);
+
+// Breadcrumbs
+
+$breadcrumb-navbar-padding-y: 0.1rem;
+$breadcrumb-navbar-padding-x: 2.2em;
+$breadcrumb-navbar-margin-bottom: 0;
+$breadcrumb-navbar-bg: var(--muted);
+$breadcrumb-divider-color: var(--muted-foreground);
+$breadcrumb-divider: quote("»");
+
+// Modals
+
+$modal-inner-padding: 0.75rem;
+$modal-footer-margin-between: 0.1rem;
+$modal-header-padding-y: 0.4rem;
+
+// Alert
+
+$alert-margin-bottom: 0.5em;
+$alert-border-radius: 5px;
+
+// List group
+
+$list-group-bg: inherit;
+$list-group-item-padding-x: 0.75rem;
+$list-group-item-padding-y: 0.375rem;
+
+// Forms
+
+$label-margin-bottom: 0;

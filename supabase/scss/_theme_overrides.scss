@@ -1,0 +1,559 @@
+/* ===== COMPREHENSIVE DARK THEME OVERRIDES ===== */
+/* These overrides ensure ALL UI elements match the dark theme from theme.md */
+
+/* ===== Global Reset ===== */
+*,
+*::before,
+*::after {
+    text-shadow: none !important;
+}
+
+body {
+    background-color: var(--background) !important;
+    color: var(--foreground) !important;
+    font-family: var(--font-sans) !important;
+}
+
+/* ===== Navigation / Sidebar ===== */
+#pma_navigation {
+    background: var(--sidebar) !important;
+    background-image: none !important;
+    color: var(--sidebar-foreground) !important;
+    border-right: 1px solid var(--sidebar-border) !important;
+}
+
+#pma_navigation a {
+    color: var(--sidebar-foreground) !important;
+}
+
+#pma_navigation a:hover {
+    color: var(--sidebar-primary) !important;
+}
+
+#pma_navigation li.activePointer,
+#pma_navigation li.selected {
+    background-color: var(--sidebar-accent) !important;
+    color: var(--sidebar-accent-foreground) !important;
+}
+
+#pma_navigation li.activePointer a,
+#pma_navigation li.selected a {
+    color: var(--sidebar-accent-foreground) !important;
+}
+
+#pma_navigation select {
+    background-color: var(--sidebar) !important;
+    color: var(--sidebar-foreground) !important;
+    border-color: var(--sidebar-border) !important;
+}
+
+#pma_navigation div.block i,
+#pma_navigation div.block b {
+    border-color: var(--sidebar-border) !important;
+}
+
+#pma_navigation .list_container {
+    border-color: var(--sidebar-border) !important;
+}
+
+#pma_navigation div.pageselector {
+    border-color: var(--sidebar-border) !important;
+}
+
+#pma_navigation li.fast_filter {
+    border-color: var(--sidebar-border) !important;
+}
+
+#pma_navigation .searchClauseClear {
+    color: var(--destructive) !important;
+}
+
+#pma_navigation_resizer {
+    background-color: var(--sidebar-border) !important;
+}
+
+#pma_navigation_collapser {
+    background: var(--sidebar-accent) !important;
+    color: var(--sidebar-foreground) !important;
+    border-color: var(--sidebar-border) !important;
+    text-shadow: none !important;
+    filter: none !important;
+}
+
+/* ===== Top Navbar ===== */
+.navbar,
+.navbar.bg-light {
+    background: var(--card) !important;
+    background-image: none !important;
+    border-bottom: 1px solid var(--border) !important;
+}
+
+.navbar-nav .nav-item {
+    background: var(--card) !important;
+    background-image: none !important;
+    border-color: var(--border) !important;
+}
+
+.navbar-nav .nav-item:hover {
+    background: var(--accent) !important;
+}
+
+.navbar-nav .nav-item.active {
+    background: var(--background) !important;
+    border-bottom-color: var(--background) !important;
+}
+
+.navbar-nav .nav-link {
+    color: var(--foreground) !important;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--primary) !important;
+}
+
+/* ===== Breadcrumb ===== */
+.breadcrumb-navbar {
+    background: var(--card) !important;
+}
+
+.breadcrumb-navbar a {
+    color: var(--primary-foreground) !important;
+}
+
+/* ===== Content Area ===== */
+#page_content {
+    background-color: var(--background) !important;
+    color: var(--foreground) !important;
+}
+
+/* ===== Cards / Fieldsets ===== */
+.card {
+    background-color: var(--card) !important;
+    color: var(--card-foreground) !important;
+    border-color: var(--border) !important;
+    box-shadow: var(--shadow-sm) !important;
+}
+
+.card-header {
+    background-color: var(--muted) !important;
+    color: var(--card-foreground) !important;
+    border-color: var(--border) !important;
+    box-shadow: none !important;
+}
+
+.card-body {
+    background-color: var(--card) !important;
+    color: var(--card-foreground) !important;
+}
+
+.card-footer {
+    background-color: var(--muted) !important;
+    color: var(--muted-foreground) !important;
+    border-color: var(--border) !important;
+}
+
+.pma-fieldset,
+fieldset {
+    background-color: var(--card) !important;
+    color: var(--card-foreground) !important;
+    border: 1px solid var(--border) !important;
+    box-shadow: var(--shadow-sm) !important;
+}
+
+.pma-fieldset legend,
+fieldset legend {
+    background-color: var(--card) !important;
+    color: var(--card-foreground) !important;
+    border: 1px solid var(--border) !important;
+    box-shadow: none !important;
+}
+
+/* ===== Forms / Inputs ===== */
+input[type=text],
+input[type=password],
+input[type=number],
+input[type=date],
+input[type=email],
+input[type=url],
+input[type=search],
+input:not([type]),
+select,
+textarea,
+.form-control,
+.form-select {
+    background-color: var(--input) !important;
+    color: var(--foreground) !important;
+    border: 1px solid var(--border) !important;
+    box-shadow: none !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--ring) !important;
+    box-shadow: 0 0 0 2px var(--ring) !important;
+    outline: none !important;
+}
+
+input[disabled],
+select[disabled],
+textarea[disabled],
+.form-control:disabled {
+    background-color: var(--muted) !important;
+    color: var(--muted-foreground) !important;
+    opacity: 0.7;
+}
+
+/* ===== Buttons ===== */
+.btn-primary,
+button.mult_submit {
+    background-color: var(--primary) !important;
+    color: var(--primary-foreground) !important;
+    border-color: var(--primary) !important;
+    background-image: none !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--ring) !important;
+    border-color: var(--ring) !important;
+}
+
+.btn-secondary {
+    background-color: var(--secondary) !important;
+    color: var(--secondary-foreground) !important;
+    border-color: var(--border) !important;
+    background-image: none !important;
+}
+
+.btn-secondary:hover {
+    background-color: var(--accent) !important;
+    color: var(--accent-foreground) !important;
+}
+
+.btn-outline-primary,
+.btn-outline-secondary {
+    color: var(--foreground) !important;
+    border-color: var(--border) !important;
+    background: transparent !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary) !important;
+    color: var(--primary-foreground) !important;
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--accent) !important;
+    color: var(--accent-foreground) !important;
+}
+
+/* ===== Tables ===== */
+table,
+.table {
+    background-color: var(--card) !important;
+    color: var(--foreground) !important;
+    --bs-table-bg: var(--card);
+    --bs-table-color: var(--foreground);
+    --bs-table-striped-bg: var(--muted);
+    --bs-table-hover-bg: var(--accent);
+    --bs-table-border-color: var(--border);
+}
+
+th,
+thead th,
+.tblHeaders {
+    background-color: var(--muted) !important;
+    background-image: none !important;
+    color: var(--muted-foreground) !important;
+    border-color: var(--border) !important;
+    font-weight: 600;
+}
+
+td {
+    border-color: var(--border) !important;
+}
+
+tr.odd,
+tbody tr:nth-child(odd) {
+    background-color: var(--card) !important;
+    color: var(--foreground) !important;
+}
+
+tr.even,
+tbody tr:nth-child(even) {
+    background-color: var(--muted) !important;
+    color: var(--foreground) !important;
+}
+
+tr:hover td,
+.table-hover tbody tr:hover {
+    background-color: var(--accent) !important;
+    color: var(--accent-foreground) !important;
+}
+
+/* ===== Links ===== */
+a {
+    color: var(--primary);
+}
+
+a:hover {
+    color: var(--ring);
+}
+
+div.tools a,
+.tblFooters a {
+    color: var(--primary) !important;
+}
+
+/* ===== Alerts ===== */
+.alert-primary {
+    background-color: var(--secondary) !important;
+    color: var(--secondary-foreground) !important;
+    border-color: var(--primary) !important;
+}
+
+.alert-success {
+    background-color: var(--accent) !important;
+    color: var(--accent-foreground) !important;
+    border-color: var(--primary) !important;
+}
+
+.alert-danger {
+    background-color: var(--destructive) !important;
+    color: var(--destructive-foreground) !important;
+    border-color: var(--destructive) !important;
+}
+
+.alert-warning {
+    background-color: var(--accent) !important;
+    color: var(--accent-foreground) !important;
+    border-color: var(--chart-4) !important;
+}
+
+.alert-info {
+    background-color: var(--secondary) !important;
+    color: var(--secondary-foreground) !important;
+    border-color: var(--chart-5) !important;
+}
+
+/* ===== Tabs ===== */
+.nav-tabs {
+    border-color: var(--border) !important;
+}
+
+.nav-tabs .nav-link {
+    background-color: var(--muted) !important;
+    color: var(--muted-foreground) !important;
+    border-color: var(--border) !important;
+}
+
+.nav-tabs .nav-link:hover {
+    background-color: var(--accent) !important;
+    color: var(--accent-foreground) !important;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: var(--card) !important;
+    color: var(--primary) !important;
+    border-bottom-color: var(--card) !important;
+}
+
+.nav-pills .nav-link {
+    background-color: var(--secondary) !important;
+    color: var(--foreground) !important;
+    border-color: var(--border) !important;
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--primary) !important;
+    color: var(--primary-foreground) !important;
+}
+
+/* ===== Pagination ===== */
+.page-link {
+    background-color: var(--card) !important;
+    color: var(--foreground) !important;
+    border-color: var(--border) !important;
+    background-image: none !important;
+}
+
+.page-link:hover {
+    background-color: var(--accent) !important;
+    color: var(--accent-foreground) !important;
+}
+
+.page-item.active .page-link {
+    background-color: var(--primary) !important;
+    color: var(--primary-foreground) !important;
+    border-color: var(--primary) !important;
+}
+
+/* ===== Modal / Dialog ===== */
+.modal-content {
+    background-color: var(--card) !important;
+    color: var(--card-foreground) !important;
+    border-color: var(--border) !important;
+}
+
+.modal-header {
+    background-color: var(--muted) !important;
+    background-image: none !important;
+    border-color: var(--border) !important;
+}
+
+.modal-footer {
+    background-color: var(--muted) !important;
+    border-color: var(--border) !important;
+}
+
+.ui-dialog {
+    background-color: var(--card) !important;
+    border-color: var(--border) !important;
+}
+
+.ui-widget-header {
+    background: var(--muted) !important;
+    color: var(--muted-foreground) !important;
+    border-color: var(--border) !important;
+}
+
+.ui-widget-content {
+    background-color: var(--card) !important;
+    color: var(--card-foreground) !important;
+}
+
+/* ===== Misc ===== */
+hr {
+    color: var(--border) !important;
+    background-color: var(--border) !important;
+    border-color: var(--border) !important;
+    opacity: 1;
+}
+
+.condition {
+    border-color: var(--primary) !important;
+}
+
+td.null {
+    color: var(--muted-foreground) !important;
+}
+
+.confirmation {
+    color: var(--foreground) !important;
+    background-color: var(--secondary) !important;
+    border: 1px solid var(--border) !important;
+}
+
+.error {
+    color: var(--destructive-foreground) !important;
+    background: var(--destructive) !important;
+    border-color: var(--destructive) !important;
+}
+
+/* ===== Tooltips ===== */
+.tooltip-inner {
+    background-color: var(--popover) !important;
+    color: var(--popover-foreground) !important;
+}
+
+/* ===== Dropdown ===== */
+.dropdown-menu {
+    background-color: var(--popover) !important;
+    color: var(--popover-foreground) !important;
+    border-color: var(--border) !important;
+}
+
+.dropdown-item {
+    color: var(--popover-foreground) !important;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: var(--accent) !important;
+    color: var(--accent-foreground) !important;
+}
+
+/* ===== List Group ===== */
+.list-group-item {
+    background-color: var(--card) !important;
+    color: var(--card-foreground) !important;
+    border-color: var(--border) !important;
+}
+
+/* ===== Quick Warp ===== */
+.pma_quick_warp .drop_button {
+    background: var(--sidebar-accent) !important;
+    border-color: var(--sidebar-border) !important;
+}
+
+.pma_quick_warp .drop_list ul {
+    background: var(--card) !important;
+    border-color: var(--border) !important;
+}
+
+/* ===== Console ===== */
+#pma_console {
+    background-color: var(--card) !important;
+    color: var(--foreground) !important;
+    border-color: var(--border) !important;
+}
+
+#pma_console .toolbar {
+    background-color: var(--muted) !important;
+}
+
+/* ===== Scrollbars (Webkit) ===== */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--muted-foreground);
+    border-radius: var(--radius);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--foreground);
+}
+
+/* ===== CodeMirror (SQL Editor) ===== */
+.CodeMirror {
+    background-color: var(--input) !important;
+    color: var(--foreground) !important;
+    border-color: var(--border) !important;
+}
+
+.CodeMirror-gutters {
+    background-color: var(--muted) !important;
+    border-color: var(--border) !important;
+}
+
+/* ===== Checkbox / Radio ===== */
+.checkall_box+label {
+    color: var(--primary) !important;
+}
+
+/* ===== Bootstrap overrides ===== */
+.bg-light {
+    background-color: var(--card) !important;
+}
+
+.border {
+    border-color: var(--border) !important;
+}
+
+.text-muted {
+    color: var(--muted-foreground) !important;
+}
+
+.text-dark {
+    color: var(--foreground) !important;
+}

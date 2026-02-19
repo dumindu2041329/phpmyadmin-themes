@@ -1,0 +1,21 @@
+.page-link {
+  background-image: none;
+  background-color: var(--card);
+  color: var(--foreground);
+
+  &:hover {
+    text-decoration: $link-hover-decoration;
+  }
+}
+
+.page-item {
+  &.active .page-link {
+    background-image: none;
+    background-color: var(--secondary);
+    color: var(--secondary-foreground);
+  }
+
+  &.disabled .page-link {
+    background-image: none;
+  }
+}

@@ -1,0 +1,25 @@
+.btn-primary,
+.btn-outline-primary {
+  font-weight: $font-weight-bold;
+}
+
+.btn-primary,
+.btn-secondary {
+  border-color: var(--border);
+  text-shadow: none;
+  background-image: none;
+  background-color: var(--secondary);
+  color: var(--secondary-foreground);
+
+  &:hover {
+    background-image: none;
+    background-color: var(--accent);
+    color: var(--accent-foreground);
+  }
+}
+
+.btn-outline-primary,
+.btn-outline-secondary {
+  color: var(--foreground);
+  border-color: var(--border);
+}
