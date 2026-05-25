@@ -1,0 +1,8 @@
+{
+    "name": "Bubblegum Dark",
+    "version": "5.0",
+    "description": "A dark theme for phpMyAdmin with Bootstrap SCSS variables tuned for low-light environments. Uses a deep navy/charcoal palette with pink and teal accents.",
+    "author": "Dumindu Damsara",
+    "url": "https://www.phpmyadmin.net/",
+    "supports": ["5.0", "5.1", "5.2"]
+}

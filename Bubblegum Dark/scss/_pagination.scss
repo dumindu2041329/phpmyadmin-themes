@@ -1,0 +1,17 @@
+.page-link {
+  background-image: linear-gradient(#283848, #1a2636);
+
+  &:hover {
+    text-decoration: $link-hover-decoration;
+  }
+}
+
+.page-item {
+  &.active .page-link {
+    background-image: linear-gradient(#3e5268, #1a2636);
+  }
+
+  &.disabled .page-link {
+    background-image: none;
+  }
+}

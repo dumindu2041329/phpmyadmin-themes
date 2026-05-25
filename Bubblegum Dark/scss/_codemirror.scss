@@ -1,0 +1,191 @@
+$textarea-cols: 40;
+$textarea-rows: 15;
+
+.CodeMirror {
+  height: 20rem;
+  background: $bg-one;
+  color: $main-color;
+  font-family: $font-family-monospace;
+  font-size: 0.85rem;
+  line-height: 1.55;
+  font-variant-ligatures: contextual;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  .CodeMirror-gutters {
+    background: darken($bg-one, 3%);
+    border-right: 1px solid $gray-300;
+    color: $gray-600;
+    font-size: 0.8rem;
+  }
+
+  .CodeMirror-cursor {
+    border-left: 2px solid lighten($navi-pointer-background, 10%);
+  }
+
+  .CodeMirror-selected {
+    background: rgba($navi-pointer-background, 0.35);
+  }
+
+  .CodeMirror-activeline-background {
+    background: rgba($gray-100, 0.55);
+  }
+
+  .CodeMirror-linenumber {
+    color: $gray-500;
+  }
+
+  .CodeMirror-matchingbracket {
+    color: $navi-pointer-color !important;
+    background-color: rgba($navi-pointer-background, 0.55);
+    outline: 1px solid rgba($navi-pointer-background, 0.6);
+  }
+
+  .CodeMirror-scroll,
+  .CodeMirror-sizer,
+  .CodeMirror-vscrollbar,
+  .CodeMirror-hscrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: $gray-400 $body-bg;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $body-bg;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $gray-400;
+      border-radius: 5px;
+      border: 2px solid $body-bg;
+
+      &:hover {
+        background: $gray-500;
+      }
+    }
+
+    &::-webkit-scrollbar-corner {
+      background: $body-bg;
+    }
+  }
+}
+
+// Code mirror default style (do not affect the console style)
+.CodeMirror.cm-s-default {
+  // @see: issue #17705
+  div.CodeMirror-scroll {
+    margin-right: 0;
+    padding-bottom: 0;
+  }
+}
+
+#inline_editor_outer .CodeMirror {
+  height: ceil($textarea-rows * 0.4em);
+}
+
+.insertRowTable .CodeMirror {
+  min-height: ceil($textarea-rows * 0.6em);
+  min-width: ceil($textarea-cols * 0.6em);
+  border: 1px solid #3e5268;
+}
+
+#pma_console .CodeMirror-gutters {
+  background-color: initial;
+  border: none;
+}
+
+span {
+  &.cm-keyword,
+  &.cm-statement-verb {
+    color: #c83070;
+  }
+
+  &.cm-variable {
+    color: #f2e4ea;
+  }
+
+  &.cm-comment {
+    color: #5a9a5a;
+  }
+
+  &.cm-mysql-string {
+    color: #5a9a5a;
+  }
+
+  &.cm-operator {
+    color: #d47068;
+  }
+
+  &.cm-mysql-word {
+    color: #f2e4ea;
+  }
+
+  &.cm-builtin {
+    color: #d47068;
+  }
+
+  &.cm-variable-2 {
+    color: #f5d680;
+  }
+
+  &.cm-variable-3 {
+    color: #5a9aaa;
+  }
+
+  &.cm-separator {
+    color: #d47068;
+  }
+
+  &.cm-number {
+    color: #5a9aaa;
+  }
+}
+
+.autocomplete-column-name {
+  display: inline-block;
+}
+
+.autocomplete-column-hint {
+  float: right;
+  color: #8a9aaa;
+  margin-left: 1em;
+}
+
+.CodeMirror-hints {
+  background: $bg-one;
+  border: 1px solid $gray-300;
+  z-index: 1999;
+
+  .CodeMirror-hint {
+    color: $main-color;
+  }
+
+  .CodeMirror-hint-active {
+    background: $navi-pointer-background;
+    color: $navi-pointer-color;
+  }
+}
+
+.CodeMirror-lint-tooltip {
+  z-index: 2000;
+  font-family: inherit;
+
+  code {
+    font-family: monospace;
+    font-weight: bold;
+  }
+}
+
+.CodeMirror-dialog {
+  background: $bg-two;
+  border-bottom: 1px solid $gray-300;
+
+  input {
+    background: $bg-one;
+    color: $main-color;
+    border: 1px solid $gray-300;
+  }
+}
